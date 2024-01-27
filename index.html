@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Swipeminer</title>
+    <link rel="preload" href="https://fonts.cdnfonts.com/css/frutiger" as="font" type="font/woff2" crossorigin>
+    <link href="https://fonts.cdnfonts.com/css/frutiger" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://kit.fontawesome.com/f51a63e9cd.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="card">
+          <div id="root" class="root"></div>
+          <div id="bottom-bar" class="bottom-bar">
+            <div class="bottom-info">
+              <div id="timer" class="timer">
+                00:00
+              </div>
+              <div id="mines-count" class="mines-count">0</div>
+              <div id="score" class="score">
+                0000000
+              </div>
+            </div>
+
+            <button id="start" class="btn">Start</button>
+
+            <div class="bottom-buttons">
+
+            <button id="sound" class="btn btn-secondary">
+              <i class="fa-solid fa-volume-high"></i>
+            </button>
+            <button id="music" class="btn btn-secondary">
+              <i class="fa-solid fa-music"></i>
+            </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script type="module" src="src/index.ts"></script>
+    </main>
+  </body>
+</html>
