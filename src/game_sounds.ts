@@ -29,6 +29,10 @@ export class GameSounds {
     const sound = this.sounds[name];
     if (!this.soundOn || !sound) return;
     sound.currentTime = 0;
-    sound.play();
+    try {
+      sound.play();
+    } catch (e) {
+      console.warn("Sound play error", e);
+    }
   }
 }
